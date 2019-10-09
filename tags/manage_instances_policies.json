@@ -15,13 +15,7 @@
             "Sid": "ThingsIAllowThemToDoForTaggedEc2s",
             "Effect": "Allow",
             "Action": [
-                "ec2:CreateImage",
-                "ec2:CreateLounchTemplate",
-                "ec2:CreateVolume",
-                "ec2:RunInstances",
-                "ec2:RebootInstances",
-                "ec2:StartInstances",
-                "ec2:StopInstances"
+                "ec2:*"
             ],
             "Condition": {
                 "StringEquals": {
