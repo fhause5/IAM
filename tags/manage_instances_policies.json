@@ -1,21 +1,13 @@
 {
-    "Version": "2019-10-9",
+    "Version": "2012-10-17",
     "Statement": [
-        {
-            "Sid": "AllowSeeEverything",
-            "Effect": "Allow",
-            "Action": [
-                "ec2:Describe*"
-            ],
-            "Resource": [
-                "*"
-            ]
-        },
         {
             "Sid": "ThingsIAllowThemToDoForTaggedEc2s",
             "Effect": "Allow",
             "Action": [
-                "ec2:*"
+                "ec2:RebootInstances",
+                "ec2:StartInstances",
+                "ec2:StopInstances"
             ],
             "Condition": {
                 "StringEquals": {
